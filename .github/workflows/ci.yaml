@@ -45,6 +45,8 @@ jobs:
 
   create_github_release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     needs: 
       - check_if_version_upgraded
     # We create a release only if the version have been upgraded and we are on a default branch
