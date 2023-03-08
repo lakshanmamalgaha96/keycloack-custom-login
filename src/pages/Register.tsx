@@ -15,8 +15,6 @@ export default function Register(props: PageProps<Extract<KcContext, { pageId: "
 
     const { msg, msgStr } = i18n;
 
-    console.log(`NOTE: It is up to you do do something meaningful with ${kcContext.authorizedMailDomains}`);
-
     return (
         <Template
             {...{ kcContext, i18n, doFetchDefaultThemeResources, ...kcProps }}
